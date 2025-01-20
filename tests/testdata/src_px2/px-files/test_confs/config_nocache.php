@@ -137,7 +137,7 @@ return call_user_func( function(){
 
 	$conf->funcs->processor->scss = [
 		// SCSS文法を処理する
-		'tomk79\pickles2\px2scss\scss::processor('.json_encode([
+		'pickles2\px2scss\scss::processor('.json_encode([
             'enable_cache' => false,
         ]).')' ,
 

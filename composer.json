@@ -1,5 +1,5 @@
 {
-    "name": "tomk79/px2-scss",
+    "name": "pickles2/px2-scss",
     "description": "Pickles 2 に、SCSSプロセッサー機能を追加します。",
     "keywords": ["pickles2"],
     "license": "MIT",
@@ -29,7 +29,7 @@
     },
     "autoload": {
         "psr-4": {
-            "tomk79\\pickles2\\px2scss\\": [
+            "pickles2\\px2scss\\": [
                 "php"
             ]
         }

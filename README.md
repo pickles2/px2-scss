@@ -1,6 +1,6 @@
 # px2-scss
 
-[Pickles 2](https://pickles2.pxt.jp/) に、SCSSプロセッサー機能を追加します。
+[Pickles 2](https://pickles2.com/) に、SCSSプロセッサー機能を追加します。
 
 [Pickles Framework 2](https://github.com/pickles2/px-fw-2.x) に内蔵されているSCSSプロセッサーの機能をベースに、結果をキャッシュして高速化する機能を追加しました。
 
@@ -9,12 +9,12 @@
 
 ### 1. Pickles 2 プロジェクト をセットアップ
 
-[Pickles 2 のセットアップ手順](https://pickles2.pxt.jp/overview/setup/) を参照してください。
+[Pickles 2 のセットアップ手順](https://pickles2.com/document/setup/) を参照してください。
 
 ### 2. composer.json に追記
 
 ```
-$ composer require tomk79/px2-scss
+$ composer require pickles2/px2-scss
 ```
 
 ### 3. config.php を更新
@@ -22,7 +22,7 @@ $ composer require tomk79/px2-scss
 ```php
 $conf->funcs->processor->scss = array(
     // SCSS文法を処理する
-    'tomk79\pickles2\px2scss\scss::processor' ,
+    'pickles2\px2scss\scss::processor' ,
 
     // css のデフォルトの処理を追加
     $conf->funcs->processor->css ,
@@ -35,7 +35,7 @@ $conf->funcs->processor->scss = array(
 ```php
 $conf->funcs->processor->scss = array(
     // SCSS文法を処理する
-    'tomk79\pickles2\px2scss\scss::processor('.json_encode([
+    'pickles2\px2scss\scss::processor('.json_encode([
         'enable_cache' => true, // キャッシュを有効にする (true = 有効, false = 無効, デフォルトは true)
     ]).')' ,
 
@@ -46,6 +46,10 @@ $conf->funcs->processor->scss = array(
 
 
 ## 更新履歴 - Change log
+
+### pickles2/px2-scss v1.0.0 (リリース日未定)
+
+- `tomk79/px2-scss` から `pickles2/px2-scss` へパッケージを移管した。
 
 ### tomk79/px2-scss v0.2.0 (2025年1月18日)
 

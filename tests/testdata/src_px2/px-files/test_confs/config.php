@@ -137,7 +137,7 @@ return call_user_func( function(){
 
 	$conf->funcs->processor->scss = [
 		// SCSS文法を処理する
-		'tomk79\pickles2\px2scss\scss::processor' ,
+		'pickles2\px2scss\scss::processor' ,
 
 		// css の処理を追加
 		$conf->funcs->processor->css ,
